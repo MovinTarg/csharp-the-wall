@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Success";
+}
+@model the_wall.Models.MessageViewModel
+<form asp-controller="Message" asp-action="PostMessage" method='POST'>
+    <div class="form-group">
+        <span asp-validation-for="messageText"></span>
+        <input class="form-control" type="textarea" asp-for="messageText">
+    </div>
+    <button type="submit" class="btn btn-primary">Post a message</button>
+</form>
+<div class="message_board">
+    @{
+        foreach (var message in ViewBag.allMessages)
+        {
+            <h4>@message["first_name"] @message["last_name"] - @message["created_at"]</h4>
+            <p>@message["message"]</p>
+            @if(message["user_id"] == ViewBag.activeUser)
+            {
+                <form action="DeleteMessage/@message["messageID"]" method="POST">
+                    <button type="submit" class="btn btn-primary">Remove</button>
+                </form>
+            }
+            @foreach (var comment in ViewBag.allComments)
+            {
+                if(comment["message_id"] == message["messageID"])
+                {
+                    <h4 class="comment">@comment["first_name"] @comment["last_name"] - @comment["created_at"]</h4>
+                    <p class="comment">@comment["comment"]</p>
+                }
+            }
+            <form action="PostComment/@message["messageID"]" method='POST'>
+                <div class="form-group">
+                    <input class="form-control" type="textarea" asp-for='commentText'>
+                </div>
+                <button type="submit" class="btn btn-primary">Post a comment</button>
+            </form>
+        }
+    }
+</div>

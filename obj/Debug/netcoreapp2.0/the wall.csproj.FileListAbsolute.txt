@@ -1,0 +1,10 @@
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\bin\Debug\netcoreapp2.0\the wall.deps.json
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\bin\Debug\netcoreapp2.0\the wall.runtimeconfig.json
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\bin\Debug\netcoreapp2.0\the wall.runtimeconfig.dev.json
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\bin\Debug\netcoreapp2.0\the wall.dll
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\bin\Debug\netcoreapp2.0\the wall.pdb
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\obj\Debug\netcoreapp2.0\the wall.csproj.CoreCompileInputs.cache
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\obj\Debug\netcoreapp2.0\the wall.AssemblyInfoInputs.cache
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\obj\Debug\netcoreapp2.0\the wall.AssemblyInfo.cs
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\obj\Debug\netcoreapp2.0\the wall.dll
+C:\Users\Pete\Desktop\DojoAssignments\netCore\asp.net_core_intermediate\the wall\obj\Debug\netcoreapp2.0\the wall.pdb

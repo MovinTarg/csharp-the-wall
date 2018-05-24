@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@if (ViewBag.messages != null)
+{
+    <p>@ViewBag.messages</p>
+}
+<h1>Registration</h1>
+@model the_wall.Models.RegisterViewModel
+<form asp-controller="User" asp-action="Register" method="POST">
+  <div class="form-group">
+    <span asp-validation-for="First_name"></span>
+    <label asp-for="First_name">First name:</label>
+    <input class="form-control" asp-for="First_name">
+  </div>
+  <div class="form-group">
+    <span asp-validation-for="Last_name"></span>
+    <label asp-for="Last_name">Last name:</label>
+    <input class="form-control" asp-for="Last_name">
+  </div>
+  <div class="form-group">
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email">Email Address:</label>
+    <input class="form-control" asp-for="Email">
+  </div>
+  <div class="form-group">
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password">Password:</label>
+    <input class="form-control" asp-for="Password">
+  </div>
+  <div class="form-group">
+    <span asp-validation-for="Confirm_password"></span>
+    <label asp-for="Confirm_password">Confirm Password:</label>
+    <input type="password" class="form-control" asp-for="Confirm_password">
+  </div>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+<h1>Login</h1>
+<form action="/login" method="POST">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="text" class="form-control" name="email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" class="form-control" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
